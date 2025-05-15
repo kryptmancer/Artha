@@ -1,0 +1,94 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# Google Cloud
+*google-credentials*.json
+*service-account*.json
+# Don't ignore other JSON files
+# *.json
+
+# Environment variables
+.env
+.env.*
+
+# Flask
+instance/
+.webassets-cache
+flask_session/
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Local development
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Flask session files
+flask_session/
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.idea/
+*.swp
+*.swo
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Local development
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+coverage.html
+.coverage.* 

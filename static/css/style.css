@@ -1,0 +1,234 @@
+/* Main Styles for Nepali Speech Translator */
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    padding: 0 15px;
+}
+
+/* Card styling */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.card-header {
+    background-color: #f1f8ff;
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.recording-card {
+    background: linear-gradient(to bottom right, #f5f9ff, #e9f2ff);
+}
+
+/* Volume meter styling */
+.volume-meter {
+    margin-top: 20px;
+}
+
+.volume-background {
+    height: 15px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.volume-level {
+    height: 100%;
+    width: 0%;
+    background-color: #4CAF50;
+    border-radius: 10px;
+    transition: width 0.2s ease, background-color 0.2s;
+}
+
+/* Status indicator */
+.status {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.status.info {
+    background-color: #cff4fc;
+    color: #055160;
+}
+
+.status.error {
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+/* Results area */
+.result-text {
+    min-height: 100px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #495057;
+}
+
+/* Button styling */
+.btn {
+    border-radius: 50px;
+    padding: 10px 25px;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.btn-lg {
+    padding: 12px 30px;
+    font-size: 18px;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+.btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(13, 110, 253, 0.25);
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #bb2d3b;
+    border-color: #b02a37;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(220, 53, 69, 0.25);
+}
+
+/* Confidence indicators */
+.high-confidence {
+    color: #198754;
+    font-weight: 500;
+}
+
+.low-confidence {
+    color: #dc3545;
+    font-weight: 500;
+}
+
+/* Animation for recording pulse */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(220, 53, 69, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(220, 53, 69, 0);
+    }
+}
+
+#stopBtn {
+    animation: pulse 2s infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .btn-lg {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    
+    .result-text {
+        min-height: 80px;
+    }
+}
+
+/* Audio levels display */
+#audioLevels {
+    margin: 20px 0;
+}
+
+.progress {
+    height: 12px;
+    border-radius: 6px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    background-color: #4361ee;
+    transition: width 0.1s ease;
+}
+
+/* Status indicators */
+.badge {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+/* Error messages */
+.alert-danger {
+    border-radius: 10px;
+    background-color: #fff5f7;
+    border-color: #ffd6e0;
+    color: #ef476f;
+}
+
+/* Loading overlay */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Placeholder text */
+.placeholder-text {
+    font-style: italic;
+    color: #adb5bd;
+}
+
+/* Animation for recording indication */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(239, 71, 111, 0.5);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(239, 71, 111, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(239, 71, 111, 0);
+    }
+}
+
+.recording-pulse {
+    animation: pulse 1.5s infinite;
+} 
