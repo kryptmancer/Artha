@@ -1,0 +1,11 @@
+# Google Cloud credentials
+# Ignore all JSON files including those in Resources/Keys
+*.json
+Artha/Artha/Resources/Keys/google-credentials*.json
+
+# Xcode
+DerivedData/
+*.xcuserstate
+xcuserdata/
+.DS_Store
+**/.DS_Store
